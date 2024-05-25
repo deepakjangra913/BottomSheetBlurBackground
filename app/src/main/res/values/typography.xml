@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_font_15_20_700">
+        <item name="fontFamily">@font/custom_font</item>
+        <item name="fontWeight">700</item>
+        <item name="android:textSize">15sp</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="custom_font_12_15_500">
+        <item name="fontFamily">@font/custom_font</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">15sp</item>
+    </style>
+</resources>

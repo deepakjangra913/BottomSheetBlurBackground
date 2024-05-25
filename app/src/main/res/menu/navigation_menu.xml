@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--This is for navigation bottom view-->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon_selector"
+        android:title="@string/label_home" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_icon_selector"
+        android:title="@string/label_profile" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/notification_icon_selector"
+        android:title="@string/label_notifications" />
+</menu>

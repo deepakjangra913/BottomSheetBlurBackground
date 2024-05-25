@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseBottomSheetStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="bottomSheetStyle">@style/customStyle</item>
+    </style>
+
+    <style name="customStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+        <item name="behavior_skipCollapsed">true</item>
+        <item name="behavior_fitToContents">true</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_peekHeight">1000dp</item>
+    </style>
+</resources>
