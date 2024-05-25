@@ -13,7 +13,7 @@ dependencyResolutionManagement {
 > Step 2. Add the dependency
 ```gradle 
 dependencies {
-	        implementation 'com.github.deepakjangra913:BlurBackgroundPractice:Tag'
+		implementation 'com.github.deepakjangra913:BottomSheetBlurBackground:Version'
 	}
 ```
 
