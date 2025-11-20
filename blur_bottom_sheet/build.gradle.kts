@@ -36,12 +36,16 @@ android {
     }
 }
 
+kotlin {
+    explicitApi()
+}
+
 publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = "com.github.deepakjangra913"
             artifactId = "BottomSheetBlurBackground"
-            version = "1.0.5"
+            version = "1.0.6"
 
             afterEvaluate {
                 from(components["release"])
