@@ -45,7 +45,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.deepakjangra913"
             artifactId = "BottomSheetBlurBackground"
-            version = "1.0.7"
+            version = "1.0.8"
 
             afterEvaluate {
                 from(components["release"])
