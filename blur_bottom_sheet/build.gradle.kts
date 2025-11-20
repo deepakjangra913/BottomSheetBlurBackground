@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id ("maven-publish")
 }
 
 android {
@@ -32,6 +33,20 @@ android {
     }
     viewBinding {
         enable = true
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.deepakjangra913"
+            artifactId = "BottomSheetBlurBackground"
+            version = "1.0.2"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
     }
 }
 

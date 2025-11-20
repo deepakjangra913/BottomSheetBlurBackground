@@ -17,5 +17,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "BlurBackgroundPractice"
-include(":app")
 include(":blur_bottom_sheet")

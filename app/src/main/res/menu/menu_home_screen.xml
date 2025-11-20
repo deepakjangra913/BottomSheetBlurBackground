@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<!-- It's for option menu for home screen -->
-    <item
-        android:id="@+id/navigation_bottom_sheet"
-        android:icon="@drawable/home_icon_selector"
-        android:title="@string/bottom_sheet_activity" />
-</menu>
