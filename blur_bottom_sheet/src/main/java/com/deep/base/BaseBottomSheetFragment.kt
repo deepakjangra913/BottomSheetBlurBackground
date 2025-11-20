@@ -31,7 +31,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
  * Use this fragment to implement a bottom sheet fragment
  * with some enhancements like blur background and dim background
  * */
-abstract class BaseBottomSheetFragment<T : ViewBinding> :
+public abstract class BaseBottomSheetFragment<T : ViewBinding> :
     BottomSheetDialogFragment() {
 
     // Base binding object to handle the child view
@@ -123,14 +123,14 @@ abstract class BaseBottomSheetFragment<T : ViewBinding> :
         return baseBinding.root
     }
 
-    abstract fun inflateBinding(
+    public abstract fun inflateBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
         attachToParent: Boolean
     ): T
 
     // Use this method to initialize the views
-    abstract fun initViews()
+    public abstract fun initViews()
 
 
     //    // It's necessary to make base fragment as transparent
@@ -402,10 +402,10 @@ abstract class BaseBottomSheetFragment<T : ViewBinding> :
         blurredViewContainerId = layoutId
     }
 
-    companion object {
+    public companion object {
 
         // TAG for logs
-        const val TAG = "com.deep.base.BaseBottomSheetFragment"
+        public const val TAG: String = "com.deep.base.BaseBottomSheetFragment"
     }
 
     /**
@@ -439,7 +439,7 @@ abstract class BaseBottomSheetFragment<T : ViewBinding> :
      * To get the status bar height for the device
      * */
     @SuppressLint("InternalInsetResource")
-    fun getStatusBarHeight(activity: Activity): Int {
+    public fun getStatusBarHeight(activity: Activity): Int {
         val resourceId =
             requireActivity().resources.getIdentifier("status_bar_height", "dimen", "android")
         return if (resourceId > 0) {
@@ -453,7 +453,7 @@ abstract class BaseBottomSheetFragment<T : ViewBinding> :
      * Use this method to change the background of the
      * bottom sheet
      * */
-    fun setBottomSheetBackground(drawableId: Int) {
+    public fun setBottomSheetBackground(drawableId: Int) {
         val drawable = ContextCompat.getDrawable(requireContext(), drawableId)
         baseBinding.container.background = drawable
     }
