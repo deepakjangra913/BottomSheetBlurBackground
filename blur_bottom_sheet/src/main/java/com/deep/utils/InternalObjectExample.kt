@@ -2,6 +2,10 @@ package com.deep.utils
 
 import android.util.Log
 
+/**
+ * This class should not be visible to other
+ * consumers
+ * */
 internal object InternalObjectExample {
 
     fun log(message: String){
