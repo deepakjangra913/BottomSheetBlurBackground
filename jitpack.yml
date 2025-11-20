@@ -1,2 +1,3 @@
 jdk:
   - openjdk17
+    // Added this property
