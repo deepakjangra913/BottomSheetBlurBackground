@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep only the classes you want exposed
+-keep class com.deep.base.BaseBottomSheetFragment { *; }
+
+# Everything else can be removed/obfuscated
+-dontwarn **
