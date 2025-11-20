@@ -22,7 +22,7 @@ import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import androidx.viewbinding.ViewBinding
 import com.deep.base.databinding.DialogBaseBottomSheetBinding
-import com.deep.utils.InternalObjectExample
+import com.deep.internal.InternalObjectExample
 import com.deep.utils.PublicObjectExample
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

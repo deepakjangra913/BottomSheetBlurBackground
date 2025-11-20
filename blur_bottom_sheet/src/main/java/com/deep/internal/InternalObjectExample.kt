@@ -1,4 +1,4 @@
-package com.deep.utils
+package com.deep.internal
 
 import android.util.Log
 
