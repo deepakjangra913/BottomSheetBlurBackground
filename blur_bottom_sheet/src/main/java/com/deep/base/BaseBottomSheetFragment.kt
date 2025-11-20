@@ -26,6 +26,7 @@ import com.deep.internal.InternalObjectExample
 import com.deep.utils.PublicObjectExample
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import java.util.NavigableMap
 
 /**
  * Use this fragment to implement a bottom sheet fragment
@@ -119,6 +120,7 @@ public abstract class BaseBottomSheetFragment<T : ViewBinding> :
 
         InternalObjectExample.log("This is for testing")
         PublicObjectExample.log("This is for testing")
+
 
         return baseBinding.root
     }

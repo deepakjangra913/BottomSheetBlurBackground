@@ -1,17 +1,21 @@
-########## PUBLIC API (VISIBLE TO CONSUMERS) ##########
+# ============================================
+# CONSUMER APP RULES
+# These rules are applied in the consumer's app
+# ============================================
 
-# Keep the main fragment API (fully visible)
--keep class com.deep.base.BaseBottomSheetFragment { *; }
+# Keep public API
+-keep public class com.deep.base.** {
+    public *;
+    protected *;
+}
 
-# Keep the public utility object (fully visible)
--keep class com.deep.utils.PublicObjectExample { *; }
+-keep public class com.deep.utils.** {
+    public *;
+}
 
+# Don't warn about obfuscated internal classes
+-dontwarn com.deep.a.**
+-dontwarn com.deep.internal.**
 
-########## INTERNAL IMPLEMENTATION (HIDDEN / OBFUSCATED) ##########
-
-# Anything in internal packages is free to obfuscate/remove
-# No keep rules → R8 will hide them automatically.
-
-# OPTIONAL: If your internal code references things that cause warnings
-# (use ONLY if needed)
-# -dontwarn com.deep.internal.**
+# Keep ViewBinding for consumers
+-keep class com.deep.base.databinding.** { *; }
